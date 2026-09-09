@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮生物语漫画-浮生物语漫画全集与阅读指南</title>
+    <meta name="description" content="浮生物语漫画是改编自青春文学作家裟椤双树同名小说的奇幻漫画作品，围绕树妖老板娘与各路妖怪、神明的故事展开，画面唯美，剧情治愈。这里为你提供浮生物语漫画的全面介绍、主要角色解析、篇章顺序及阅读建议。">
+    <meta name="keywords" content="浮生物语漫画,浮生物语,浮生物语漫画大全,浮生物语漫画阅读,树妖老板娘,裟椤双树,漫画推荐">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f7f4ef;
+            color: #2d2a26;
+            line-height: 1.75;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* 页眉与导航 */
+        .site-header {
+            background-color: #fffaf3;
+            border-bottom: 1px solid #e8dfd3;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 16px 0;
+        }
+        .brand h1 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #6b4f3a;
+            letter-spacing: 1px;
+        }
+        .brand h1 span {
+            color: #b38b5d;
+        }
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 26px;
+        }
+        .main-nav a {
+            font-size: 1rem;
+            color: #4a3f35;
+            padding: 6px 2px;
+            border-bottom: 2px solid transparent;
+            transition: color .25s, border-color .25s;
+        }
+        .main-nav a:hover {
+            color: #a5713d;
+            border-color: #a5713d;
+        }
+
+        /* 首屏 */
+        .hero {
+            background: linear-gradient(135deg, #f3e9dc 0%, #e5d5c0 100%);
+            padding: 72px 0 60px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #3e2f23;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+        }
+        .hero p {
+            max-width: 720px;
+            margin: 0 auto 28px;
+            font-size: 1.1rem;
+            color: #5c4a3a;
+        }
+        .hero-btn {
+            display: inline-block;
+            background-color: #6b4f3a;
+            color: #fdf9f3;
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: background-color .3s, transform .2s;
+        }
+        .hero-btn:hover {
+            background-color: #8a684a;
+            transform: translateY(-2px);
+        }
+
+        /* 章节 */
+        .section {
+            padding: 64px 0;
+        }
+        .section-alt {
+            background-color: #fffdf9;
+            border-top: 1px solid #ede5d8;
+            border-bottom: 1px solid #ede5d8;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #3e2f23;
+            text-align: center;
+            margin-bottom: 16px;
+            position: relative;
+        }
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #b38b5d;
+            margin: 14px auto 0;
+            border-radius: 3px;
+        }
+        .section-sub {
+            text-align: center;
+            color: #7a6a5a;
+            max-width: 700px;
+            margin: 0 auto 48px;
+            font-size: 1rem;
+        }
+
+        /* 卡片网格 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 30px 24px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+            border: 1px solid #f0e9df;
+            transition: transform .3s, box-shadow .3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+        }
+        .card-icon {
+            font-size: 2.2rem;
+            margin-bottom: 14px;
+            display: inline-block;
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            color: #4a3a2a;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #5f554a;
+            font-size: 0.95rem;
+        }
+
+        /* 角色列表 */
+        .character-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        .character-item {
+            background: #fbf6ef;
+            border-radius: 14px;
+            padding: 22px 20px;
+            border-left: 4px solid #b38b5d;
+        }
+        .character-item h3 {
+            font-size: 1.1rem;
+            color: #6b4f3a;
+            margin-bottom: 8px;
+        }
+        .character-item p {
+            font-size: 0.9rem;
+            color: #5c4f42;
+        }
+
+        /* 阅读顺序 */
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .step-list li {
+            counter-increment: step-counter;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 22px 24px 22px 56px;
+            margin-bottom: 18px;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            border: 1px solid #ece3d6;
+        }
+        .step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            background-color: #b38b5d;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .step-list h3 {
+            font-size: 1.1rem;
+            color: #4a3a2a;
+            margin-bottom: 6px;
+        }
+        .step-list p {
+            color: #65594c;
+            font-size: 0.95rem;
+        }
+
+        /* 注意事项 / 提示 */
+        .tips-box {
+            background: #fff3e2;
+            border-radius: 16px;
+            padding: 28px 28px;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px dashed #c9a87c;
+        }
+        .tips-box h3 {
+            color: #7a5e3f;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+        .tips-box ul {
+            padding-left: 20px;
+        }
+        .tips-box li {
+            margin-bottom: 8px;
+            color: #5a4a38;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px 26px;
+            margin-bottom: 16px;
+            border: 1px solid #eee5d9;
+        }
+        .faq-item h3 {
+            font-size: 1.05rem;
+            color: #4a3a28;
+            margin-bottom: 8px;
+            cursor: default;
+        }
+        .faq-item p {
+            color: #5e5348;
+            font-size: 0.95rem;
+        }
+
+        /* 相关主题 */
+        .topic-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 10px;
+        }
+        .topic-links a {
+            background-color: #ffffff;
+            padding: 10px 24px;
+            border-radius: 30px;
+            border: 1px solid #d9c9b4;
+            font-size: 0.95rem;
+            color: #6b543f;
+            transition: all .25s;
+        }
+        .topic-links a:hover {
+            background-color: #6b4f3a;
+            color: #fff;
+            border-color: #6b4f3a;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background-color: #2f2923;
+            color: #c9bcae;
+            padding: 40px 0 30px;
+            margin-top: 40px;
+        }
+        .footer-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            text-align: center;
+        }
+        .site-footer p {
+            font-size: 0.9rem;
+            max-width: 600px;
+        }
+        .footer-brand {
+            font-size: 1.2rem;
+            color: #e8d9c8;
+            font-weight: 600;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+                text-align: center;
+            }
+            .main-nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+            .hero {
+                padding: 48px 0 36px;
+            }
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            .section {
+                padding: 44px 0;
+            }
+            .container {
+                padding: 0 18px;
+            }
+        }
+        @media (max-width: 480px) {
+            .brand h1 {
+                font-size: 1.4rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .card-grid {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="brand">
+            <h1>浮生物语漫画<span> · 全文指南</span></h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about">漫画简介</a></li>
+                <li><a href="#characters">主要角色</a></li>
+                <li><a href="#order">阅读顺序</a></li>
+                <li><a href="#tips">阅读提示</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- 首屏 -->
+    <section class="hero">
+        <div class="container">
+            <h2>浮生物语漫画：妖怪世界里的温柔与羁绊</h2>
+            <p>浮生物语漫画改编自裟椤双树的同名小说，以树妖老板娘“浮生”的茶馆为舞台，讲述她与形形色色妖怪、神明相遇的故事。画面精致，故事温暖，是许多读者心中的治愈系奇幻之作。</p>
+            <a href="#about" class="hero-btn">了解这部漫画</a>
+        </div>
+    </section>
+
+    <!-- 漫画简介 -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">什么是《浮生物语》漫画</h2>
+            <p class="section-sub">一部将东方奇幻与现代情感交织的漫画作品，既有妖异之美，也有人间烟火。</p>
+            <div class="card-grid">
+                <article class="card">
+                    <span class="card-icon">🏮</span>
+                    <h3>故事背景</h3>
+                    <p>故事围绕一间名为“浮生”的茶馆展开，老板娘并非凡人，而是一棵千年树妖。她以茶待客，而来客多是妖怪、神明或心怀执念之人。每一杯茶，每一段故事，都藏着关于执念与放下的秘密。</p>
+                </article>
+                <article class="card">
+                    <span class="card-icon">🎨</span>
+                    <h3>画风特色</h3>
+                    <p>漫画画风细腻，场景充满东方古典韵味，人物形象鲜明。无论是妖异的华丽还是凡尘的温情，都在线条与色彩中表现出独特的叙事氛围，极具辨识度。</p>
+                </article>
+                <article class="card">
+                    <span class="card-icon">💫</span>
+                    <h3>核心主题</h3>
+                    <p>每个篇章都围绕一种“执念”展开，讲述妖怪与人之间的缘分、遗憾与和解。故事并不刻意煽情，却往往在平淡中触动人心，令人回味。</p>
+                </article>
+                <article class="card">
+                    <span class="card-icon">📖</span>
+                    <h3>原作与改编</h3>
+                    <p>原作是裟椤双树创作的同名小说系列，漫画在保留原作精髓的基础上，以更直观的画面语言呈现故事，适合喜欢图像叙事的读者。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要角色 -->
+    <section class="section section-alt" id="characters">
+        <div class="container">
+            <h2 class="section-title">主要角色</h2>
+            <p class="section-sub">了解这些角色，你便能更快进入浮生物语的世界。</p>
+            <div class="character-list">
+                <div class="character-item">
+                    <h3>浮生（老板娘）</h3>
+                    <p>千年树妖，外表是恬静的年轻女子。她经营着“浮生”茶馆，看似淡泊，实则洞悉人心，以茶为媒介，渡人渡妖。</p>
+                </div>
+                <div class="character-item">
+                    <h3>敖炽（男主）</h3>
+                    <p>身份神秘、性格张扬的龙族后裔。他与浮生之间有着复杂而深远的渊源，是故事中重要的情感线之一。</p>
+                </div>
+                <div class="character-item">
+                    <h3>各路妖怪与访客</h3>
+                    <p>每一篇漫画中会出现新的妖或人，他们带着各自的执念走进茶馆，在浮生的帮助下，或释怀，或改变，或留下遗憾。</p>
+                </div>
+                <div class="character-item">
+                    <h3>其他重要角色</h3>
+                    <p>随着故事推进，还会出现许多与浮生过去相关的角色，他们共同拼凑出这个庞大而动人的世界观。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 阅读顺序 -->
+    <section class="section" id="order">
+        <div class="container">
+            <h2 class="section-title">建议阅读顺序</h2>
+            <p class="section-sub">漫画篇章相对独立，但按顺序阅读更能体会人物成长与伏笔。</p>
+            <ol class="step-list">
+                <li>
+                    <h3>从第一话开始</h3>
+                    <p>漫画开篇会介绍浮生和茶馆的设定，以及她与敖炽的初次交集。虽然每一篇故事独立，但早期篇章奠定了人物关系基础。</p>
+                </li>
+                <li>
+                    <h3>按篇章顺序阅读</h3>
+                    <p>每个篇章围绕一个主要妖怪展开，建议按章节顺序阅读，这样能感受到作者在情绪和主题上的递进安排。</p>
+                </li>
+                <li>
+                    <h3>留意伏笔与细节</h3>
+                    <p>浮生物语中有许多前后呼应的细节，比如浮生的过去、敖炽的身份等。重读时往往会有新发现。</p>
+                </li>
+                <li>
+                    <h3>结合小说原作</h3>
+                    <p>如果对某个角色或故事背景感兴趣，可以翻阅裟椤双树的同名小说，小说有更详尽的叙述，漫画则更直观。</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 阅读提示 -->
+    <section class="section section-alt" id="tips">
+        <div class="container">
+            <h2 class="section-title">阅读前需要知道的几件事</h2>
+            <div class="tips-box">
+                <h3>给新读者的几点提示</h3>
+                <ul>
+                    <li>漫画并非单纯的热血或恋爱故事，它更偏向奇幻治愈，节奏较慢，适合静下心来阅读。</li>
+                    <li>部分篇章带有淡淡的忧伤，但整体基调是温暖和释然。</li>
+                    <li>不同篇章之间时间线可能跳跃，注意角色状态的变化。</li>
+                    <li>漫画目前仍在连载或阶段性更新，具体进度可关注官方平台。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="section-title">常见问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>《浮生物语》漫画与小说有什么区别？</h3>
+                    <p>小说文字细腻，心理描写丰富，世界观铺陈更为详尽。漫画则通过画面和分镜强化情绪氛围，情节有所精简但核心故事一致。两者各有特色，可以互为补充。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>漫画完结了吗？</h3>
+                    <p>目前漫画仍在更新中，具体话数与进度请以官方发布为准。故事尚未完全结束，喜欢的话可以持续关注。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>适合什么人群阅读？</h3>
+                    <p>适合喜欢东方奇幻、妖怪题材、治愈系故事，以及注重画面美感的读者。如果喜欢《夏目友人帐》这类作品，很可能也会喜欢《浮生物语》。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>从哪里可以阅读正版漫画？</h3>
+                    <p>建议通过国内正规漫画平台（如腾讯动漫、快看等）搜索《浮生物语》，支持正版才能让作品持续更新。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 相关主题 -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">你可能还会喜欢</h2>
+            <p class="section-sub">如果你被浮生物语的世界打动，以下作品也值得一看。</p>
+            <div class="topic-links">
+                <a href="#">夏目友人帐</a>
+                <a href="#">百鬼夜行抄</a>
+                <a href="#">虫师</a>
+                <a href="#">狐妖小红娘</a>
+                <a href="#">非人哉</a>
+                <a href="#">妖怪名单</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-brand">浮生物语漫画 · 专题页</div>
+        <p>本页面为爱好者整理的信息指南，旨在帮助读者更好地了解《浮生物语》漫画。漫画版权归原作者及出版方所有，请支持正版阅读。</p>
+    </div>
+</footer>
+
+</body>
+</html>
